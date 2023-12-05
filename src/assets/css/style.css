@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+    html{
+        font-family: 'Mukta', sans-serif;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        
+    }
+
+    body{
+        background-color: #F7F7F7;
+    }
+
+    section{
+        min-height: 100vh;
+    } 
+}
+
+@layer components {
+    .wrapper{
+        @apply w-[94%] max-w-8xl mx-auto  
+    }
+    .subheader{
+        @apply text-dark font-bakbak text-5xl
+    }
+    
+    .input{
+         @apply py-4 rounded-3xl w-full px-6 outline-none text-xl drop-shadow-contact bg-dark text-light  
+    }
+
+}
